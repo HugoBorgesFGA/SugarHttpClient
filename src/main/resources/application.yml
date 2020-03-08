@@ -1,0 +1,19 @@
+http:
+
+  clients:
+    - id: "default"
+
+  requests:
+    - id: "google-homepage"
+      client: "default"
+      host: "http://www.google.com"
+      path: "/"
+      method: "GET"
+
+    - id: "bitcointrade-ticker"
+      headers:
+        "Content-Type": "application/json"
+        "Security" : "{securityKey}"
+      host: "https://api.bitcointrade.com.br"
+      path: "/v3/public/{pair}/ticker"
+      method: "GET"
