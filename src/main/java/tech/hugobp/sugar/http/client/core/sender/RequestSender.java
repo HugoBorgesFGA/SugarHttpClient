@@ -5,5 +5,5 @@ import tech.hugobp.sugar.http.client.entities.HttpRequest;
 import tech.hugobp.sugar.http.client.entities.HttpResponse;
 
 public interface RequestSender {
-    Single<HttpResponse> send(HttpRequest build);
+    Single<HttpResponse> send(HttpRequest request);
 }
