@@ -1,7 +1,6 @@
 package tech.hugobp.sugar.http.client.core.sender;
 
 import io.reactivex.Single;
-import io.reactivex.subscribers.TestSubscriber;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;

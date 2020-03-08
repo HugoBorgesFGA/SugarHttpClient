@@ -21,6 +21,7 @@ dependencies {
 	compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.18'
 	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.3'
 	compile group: 'org.apache.commons', name: 'commons-text', version: '1.8'
+	compile group: 'org.apache.httpcomponents', name: 'httpasyncclient', version: '4.1.4'
 
 	testCompile group: 'org.mockito', name: 'mockito-core', version: '3.3.0'
 }

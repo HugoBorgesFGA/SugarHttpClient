@@ -11,6 +11,7 @@ http:
       method: "GET"
 
     - id: "bitcointrade-ticker"
+      client: "default"
       headers:
         "Content-Type": "application/json"
         "Security" : "{securityKey}"
