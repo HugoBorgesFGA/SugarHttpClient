@@ -108,13 +108,14 @@ public class RequestSenderApacheImpl implements RequestSender {
 
     private CloseableHttpAsyncClient createApacheClient(HttpRequest request) {
 
-        final HttpClient httpClientSettings = clientFactory.create(request.getClient());
+        final String clientId = request.getClient();
+        final HttpClient httpClientSettings = clientFactory.create(clientId);
 
         // Create according to the settings provided by the httpClient
         CloseableHttpAsyncClient client = HttpAsyncClients.createDefault();
 
         if (!client.isRunning()) {
-            LOGGER.info("Client was not running yet. Starting client...");
+            LOGGER.info("Client '{}' was not running yet. Starting client...", clientId);
             client.start();
         }
 
